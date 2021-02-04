@@ -1,0 +1,157 @@
+.baseLayout{
+  height:100vh;
+  .logo{
+    position: relative;
+    //height: 64px;
+display: flex;
+    color:#fff;
+    .icon{
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4.72vh;
+      height: 4.72vh;
+    }
+    .title{
+      font-size: 1.5vw;
+      margin-left:2vh;
+    }
+    .sub{
+      margin:0 1vh;
+      font-weight: bold;
+      font-size: 1.2vw;
+    }
+  }
+
+  .header{
+    user-select: none;
+    cursor: default;
+    display: flex;
+    background: #343957;
+    color: #fff;
+    padding-left: 1.25vw;
+    .headerSelect{
+      user-select: none;
+     padding: 0 0.64vw;
+      height: 100%;
+      float: left;
+      line-height: 0;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      .icon{
+        display: block;
+        margin: 0 auto;
+        width: 3.52vh;
+        height: 3.52vh;
+      }
+      .title{
+        line-height: 30px;
+        width: 100%;
+        text-align: center;
+      }
+
+    }
+    .checkHeader{
+      position: relative;
+      //background:linear-gradient(180deg, rgba(70, 74, 255, 0.52),rgba(0, 0, 0, 0.2));
+      &:after{
+       content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 1vh solid #fff;
+        border-right: 1vh solid transparent;
+        border-left: 1vh solid transparent;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .logo{
+
+    }
+  }
+
+.mainBox{
+
+  .mainContent{
+    display: flex;
+    flex-flow: column;
+    margin: 0 !important;
+  }
+  .contentBox{
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+  .Breadcrumb{
+    padding:0 10px;
+    height: 38px;
+    line-height: 38px;
+    color:#367FC3;
+    background: #8eb3f6;
+    .BreadcrumbItem{
+      color:#fff;
+    }
+
+
+  }
+
+  .headerSelect{
+      cursor: pointer;
+  }
+  .footer{
+    padding: 10px  0;
+    background: #001529;
+    .footerImg {
+      height: 100%;
+    }
+  }
+
+  .sub-menu-box{
+    .sub-menu-title{
+      color: #05487e;
+    }
+    .sub-menu-main{
+      background-color: transparent;
+    }
+  }
+
+.left-menu-item{
+  display: flex;
+  align-items: center;
+  .left-menu-item-icon{
+    width: 2vh;
+    height: 2vh;
+    margin-right: 1vh;
+  }
+}
+
+
+}
+
+
+
+@media screen and (max-width: 1440px) and (min-width: 1366px){
+  .baseLayout{
+    .header{
+      .headerSelect{
+        .icon{
+        }
+        .title{
+          line-height: 20px;
+        }
+
+      }
+    }
+  }
+}
+

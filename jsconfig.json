@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    //baseUrl的地址修改
+    "baseUrl": ".",
+    //可做路径操作
+    "paths": {
+      "@/*": ["./src/*"],
+
+    }
+  }
+}

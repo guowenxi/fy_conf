@@ -1,0 +1,25 @@
+// mixins for clearfix
+// ------------------------
+.clearfix() {
+  zoom: 1;
+  &::before,
+  &::after {
+    display: table;
+    content: ' ';
+  }
+  &::after {
+    clear: both;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+  }
+}
+//vertical
+.vertical{
+  &::before{
+    display: inline-block;
+    content: "";
+    height: 100%;
+    vertical-align: middle;
+  }
+}

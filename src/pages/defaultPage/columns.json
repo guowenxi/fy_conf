@@ -1,0 +1,29 @@
+{
+  "url": "/dataView/handleEvent/getEventListByTodo",
+  "params":{},
+  "checkBox":true,
+  "operation": [
+    { "name": "查看", "type": "disabled","drawerWidth": "50"},
+    { "name": "查看", "type": "disabled","drawerWidth": "50"}
+  ],
+  "searchListType": "complexQuery",
+  "searchList": [
+    { "title": "关键字", "type": "input", "key": "keyword", "placeholder": "请输入关键字" }
+  ],
+  "tableColumns":[
+    {
+      "title": "测试",
+      "dataIndex": "reportPersonName",
+      "key": "reportPersonName",
+      "width": "10%",
+      "align": "center"
+    },
+    {
+      "title": "测试",
+      "key": "eventStatus",
+      "dataIndex": "eventStatus",
+      "width": "10%",
+      "align": "center"
+    }
+  ]
+}

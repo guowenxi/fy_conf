@@ -1,0 +1,88 @@
+{
+    "TITLE": "测试",
+    "HEADTITLE": "平安瓯海综合信息系统",
+    "HEADSUBTITLE": "222 ",
+    "ROUTERLIST_URL": {
+        "url":"/rbac/fyOpdataRight/getRestOfMenu",
+        "payload":{
+            "screen": "0",
+            "parentId": "socialRiskIndex01"
+        }
+    },
+    "DEV_URL": "http://192.168.1.243:8080",
+    "BUILD_URL": "http://192.168.1.243:8080",
+    "PUBLIC_PATH": "./",
+    "LOGIN_URL": "/rbac/login.html",
+    "STATICLIST": [
+        {
+            "displayName": "社会舆情",
+            "name": "SGIManage",
+            "tempList": [
+                {
+                    "name": "SGIManage:SGIList",
+                    "displayName": "热词库"
+                }
+            ]
+        }
+    ],
+    "RBACTOKEN": "225591b1189543758c7397d1dd398658",
+    "WEBSOCKETURLS": [
+        {
+            "name": "socket1",
+            "url": "ws: //192.168.1.166:8083/jh_security/websocket?missionId=page&type=2"
+        }
+    ],
+    "DEFAULTLOADLIST": [
+        {
+            "type": "select",
+            "url": "/dataView/ouHai/getTypeList",
+            "name": "streetList",
+            "payload": {
+                "type": 4
+            }
+        },
+        {
+            "type": "select",
+            "url": "/dataView/ouHai/getTypeList",
+            "name": "usingStatusList",
+            "payload": {
+                "type": 5
+            }
+        },
+        {
+            "type": "select",
+            "url": "/dataView/ouHai/getTypeList",
+            "name": "eventTypeList",
+            "payload": {
+                "type": 6
+            }
+        },
+        {
+            "type": "select",
+            "url": "/dataView/ouHai/getTypeList",
+            "name": "eventSourceList",
+            "payload": {
+                "type": 10
+            }
+        },
+        {
+            "type": "select",
+            "url": "/dataView/emergencyGoods/getGoodsType",
+            "name": "materialsList",
+            "payload": {
+                "typeId": "ZFW003"
+            }
+        }
+    ],
+    "ROOT_MAP_CENTER": [
+        120.559673,
+        27.584337
+    ],
+    "ROUTERS": [
+        {
+            "name": "defaultPage",
+            "path": "/SGIManage_SGIList",
+            "component": "./defaultPage/index"
+        }
+    ]
+}
